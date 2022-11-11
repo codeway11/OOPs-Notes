@@ -1,0 +1,51 @@
+ 1)Differnce between C and C++?
+Answer::C is the foundational, procedural programming language introduced earlier for system applications and low-level programs.
+C++ is an Object-oriented programming language with features same as C and additional features like Encapsulation, Inheritance, etc for complex application development.
+link for more detailed:: https://www.interviewbit.com/blog/difference-between-c-and-cpp/
+2)Explain OOPs Concept?
+Answer::OOPs, or Object-Oriented Programming is a programming model or paradigm which revolves around the concept of “OBJECTS”. Objects can be considered as real-world instances of entities like class, that contain some characteristics and behaviors specified in the class template.
+In simple language, a class can be considered as the blueprint or template, based on which objects can be created. So the Objects are considered the instance of a class, and are therefore sometimes called “instances”. The term “characteristics” refers to the “what” about the Object, and the term “behavior” refers to the “how” about the Object.
+For example, if we consider a car, then based on the OOPs model:
+Class = A specific car model, such as Audi A4, BMW I8, Maruti Suzuki Vitara Brezza, etc.
+Object = A specific car of any model, like the car you own
+Characteristics = What is the color of your car? What is the Chassis number of your car? etc
+Behavior = How to start the car? How to change the gear of the car? etc.
+Characteristics are also known as data, attributes, or properties, and Behaviours are also known as the functions, procedures or methods, in the programming language
+3)Different types of class in OOps?
+Answer::An abstract class is a class for which one or more methods are declared but not defined, meaning that the compiler knows these methods are part of the class, but not what code to execute for that method. These are called abstract methods. Here is an example of an abstract class.
+A concrete class is a class that has an implementation for all of its methods. They cannot have any unimplemented methods. It can also extend an abstract class or implement an interface as long as it implements all their methods. It is a complete class and can be instantiated.
+4)Explain main feature of OOps?
+Answer::Main Feature of OOps-
+   a)Inheritance 
+   b)Encapsulation
+   c)Polymorphism
+   d)Abstraction
+5)Explain Constructor and Destructor and it's types?
+Answer::Constructor-:Constructor in C++ is a special method that is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as the class or structure. Constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object which is why it is known as constructors.
+Constructor does not have a return value, hence they do not have a return type.
+Types of Constructor:-
+  a)Default Constructor
+  b)Parametrised Constructor
+  c)Copy Constructor
+Destructor-:Destructor is an instance member function which is invoked automatically whenever an object is going to be destroyed. Meaning, a destructor is the last function that is going to be called before an object is destroyed.
+Destructor is also a special member function like constructor. Destructor destroys the class objects created by constructor. 
+**Destructor has the same name as their class name preceded by a tiled (~) symbol.
+**It is not possible to define more than one destructor. 
+**The destructor is only one way to destroy the object create by constructor. Hence destructor can-not be overloaded.
+**Destructor neither requires any argument nor returns any value.
+**It is automatically called when object goes out of scope. 
+**Destructor release memory space occupied by the objects created by constructor.
+**In destructor, objects are destroyed in the reverse of an object creation.
+6)Explain Virtual Constructor and Virtual Destructor?
+Answer::A virtual destructor is used to free up the memory space allocated by the derived class object or instance while deleting instances of the derived class using a base class pointer object. A base or parent class destructor use the virtual keyword that ensures both base class and the derived class destructor will be called at run time, but it called the derived class first and then base class to release the space occupied by both destructors.
+Why we use virtual destructor in C++?
+When an object in the class goes out of scope or the execution of the main() function is about to end, a destructor is automatically called into the program to free up the space occupied by the class' destructor function. When a pointer object of the base class is deleted that points to the derived class, only the parent class destructor is called due to the early bind by the compiler. In this way, it skips calling the derived class' destructor, which leads to memory leaks issue in the program. And when we use virtual keyword preceded by the destructor tilde (~) sign inside the base class, it guarantees that first the derived class' destructor is called. Then the base class' destructor is called to release the space occupied by both destructors in the inheritance class.
+7)Explain Inheritance and it's types?
+Answer::Inheritance is one of the major features of object-oriented programming, by which an entity inherits some characteristics and behaviours of some other entity and makes them their own. Inheritance helps to improve and facilitate code reuse.
+It's types-
+a)Single level Inheritance
+b)Multilevel Inheritance
+c)Multiple Inheritance
+d)Hierarchical Inheritance
+e)Hybrid Inheritance
+8)
